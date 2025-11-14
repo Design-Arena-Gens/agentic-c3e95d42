@@ -1,0 +1,21 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --bg: #0a0a0b;
+}
+
+html, body { height: 100%; }
+
+/* Buttons */
+.btn { @apply inline-flex items-center gap-2 rounded-md px-4 py-2 font-medium transition disabled:opacity-60 disabled:cursor-not-allowed; }
+.btn-primary { @apply bg-primary text-primary-fg hover:opacity-90; }
+.btn-outline { @apply border border-zinc-700 hover:bg-zinc-800; }
+
+/* Inputs */
+.input { @apply w-full rounded-md bg-zinc-900 border border-zinc-700 px-3 py-2 outline-none focus:ring-2 ring-primary; }
+.label { @apply block text-sm text-zinc-400 mb-1; }
+
+/* Cards */
+.card { @apply rounded-xl border border-zinc-800 bg-zinc-900/60 backdrop-blur; }
